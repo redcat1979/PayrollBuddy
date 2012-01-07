@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:stretchColumns="1">
+        	
+        <TableRow>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_span="3"
+				android:gravity="center_vertical|center_horizontal"
+				android:textSize="10pt"
+				android:text="Export" />        
+        </TableRow>
+        
+        <View
+        	android:layout_height="2dip"
+        	android:background="#FF909090" />
+        
+		<TableRow>
+	        <TextView android:text="@string/export_emp"
+	            android:padding="3dip"
+	            android.layout_span="1" />
+ 		    <Spinner android:id="@+id/employees"
+		        android:layout_height="wrap_content"  
+	        	android:prompt="@string/export_emp"
+   				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_span="2" />
+	    </TableRow>
+
+	    <TableRow>
+		    <Button android:id="@+id/employees_run" 
+				android:layout_column="1"
+			  	android:text="@string/export_emp_run"
+	        	android:layout_width="0dip"
+	        	android:layout_weight="1"
+				android:layout_height="wrap_content" />
+		</TableRow>
+
+        <View
+        	android:layout_height="2dip"
+        	android:background="#FF909090" />
+
+		<TableRow>
+	        <TextView android:text="@string/export_start_date"
+	            android:padding="3dip"
+	            android.layout_span="1" />
+			<DatePicker
+			    android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content" 
+	    		android:id="@+id/startpicker" />
+	    </TableRow>
+
+		<TableRow>
+	        <TextView android:text="@string/export_stop_date"
+	            android:padding="3dip"
+	            android.layout_span="1" />
+			<DatePicker
+			    android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content" 
+	    		android:id="@+id/stoppicker" />
+	    </TableRow>
+
+	    <TableRow>
+		    <Button android:id="@+id/date_run" 
+				android:layout_column="1"
+			  	android:text="@string/export_date_run"
+	        	android:layout_width="0dip"
+	        	android:layout_weight="1"
+				android:layout_height="wrap_content" />
+		</TableRow>
+				
+	</TableLayout>
+</LinearLayout>

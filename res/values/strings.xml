@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Payroll Buddy</string>
+    <string name="no_emps">No Employees Yet</string>
+    <string name="menu_insert">Add Employee</string>
+    <string name="menu_delete">Delete Employee</string>
+    <string name="menu_profile">Edit Profile</string>
+    <string name="menu_export">Export</string>
+    <string name="emp_name">Name:</string>
+    <string name="emp_status">Status:</string>
+    <string name="emp_overtime">Pay Overtime</string>
+    <string name="emp_pay">Pay:</string>
+    <string name="emp_payrate">Pay Rate:</string>
+    <string name="emp_payunit">Pay Unit:</string>
+    <string name="emp_precision">Hourly Units:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="profile">Edit Profile</string>
+    <string name="date">Record Activity</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="enablepay">Pay this employee</string>
+    <string name="overtime_true">Pay Overtime</string>
+    <string name="overtime_false">No Overtime</string>
+    <string name="time_quarter">By 15 minutes</string>
+    <string name="time_tenth">By 6 minutes</string>
+    <string name="time_minute">By 1 minute</string>
+    <string name="hourly">Per Hour</string>
+    <string name="daily">Per Day</string>
+    <string name="pb_email">Email</string>
+    <string name="export_emp_run">Export by employee</string>
+	<string name="export_emp"></string>
+    <string name="export_date_run">Export by dates</string>
+	<string name="export_start_date">Start</string>
+	<string name="export_stop_date">Stop</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:stretchColumns="1">
+        	
+        <TableRow>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_span="3"
+				android:textSize="10pt"
+				android:gravity="center_vertical|center_horizontal"
+				android:text="Employee Profile" />        
+        </TableRow>
+        
+        <View
+        	android:layout_height="2dip"
+        	android:background="#FF909090" />
+        
+	    <TableRow>
+	        <TextView
+	            android:text="@string/emp_name"
+	            android:padding="3dip" />
+	        <EditText android:id="@+id/name" 
+				android:layout_span="2"
+	        	android:gravity="left"
+	            android:padding="3dip" />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <CheckBox android:id="@+id/status"
+		        android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_column="1"
+    			android:layout_span="2"
+        		android:text="@string/active" />
+		</TableRow>
+		
+	    <TableRow>
+  	        <CheckBox android:id="@+id/pay"  
+    			android:layout_height="wrap_content"  
+    			android:text="@string/enablepay"
+    			android:layout_column="1"
+    			android:layout_span="2"
+    			android:layout_width="fill_parent" />
+		</TableRow>
+		
+		<TableRow>
+	        <TextView android:text="@string/emp_pay"
+	            android:padding="3dip" />
+	        <EditText android:id="@+id/payrate" 
+	        	android:gravity="left"
+		        android:layout_height="wrap_content"  
+	        	android:layout_width="100dip" 
+	            android:padding="3dip" />
+ 		    <Spinner android:id="@+id/payunit"
+		        android:layout_height="wrap_content"  
+	        	android:prompt="@string/emp_payunit"
+   				android:layout_gravity="left"
+				android:gravity="left" />
+	    </TableRow>
+
+	    <TableRow>
+	        <TextView
+	            android:text="@string/emp_precision"
+	            android:padding="3dip" />
+		    <Spinner android:id="@+id/precision"
+		        android:layout_height="wrap_content"  
+	        	android:prompt="@string/emp_precision"
+				android:layout_span="2"
+	        	android:layout_width="250dip"
+   				android:layout_gravity="left"
+				android:gravity="left" />	    
+	    </TableRow>
+
+	    <TableRow>
+  	        <CheckBox android:id="@+id/overtime"  
+    			android:layout_height="wrap_content"  
+    			android:text="@string/emp_overtime"
+    			android:layout_column="1"
+    			android:layout_span="2"
+    			android:layout_width="fill_parent" />
+		</TableRow>
+		
+	    <TableRow>
+		    <Button android:id="@+id/save_button" 
+				android:layout_column="1"
+			  	android:text="@string/save"
+	        	android:layout_width="0dip"
+	        	android:layout_weight="1"
+				android:layout_height="wrap_content" />
+		
+			<Button android:id="@+id/cancel_button" 
+				android:layout_column="2"
+	  			android:text="@string/cancel"
+	        	android:layout_width="0dip"
+	        	android:layout_weight="1"
+				android:layout_height="wrap_content" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <array name="precision">
+      <item>@string/time_quarter</item>
+      <item>@string/time_tenth</item>
+      <item>@string/time_minute</item>
+   </array>
+   <array name="status">
+      <item>@string/active</item>
+      <item>@string/inactive</item>
+   </array>
+   <array name="overtime">
+      <item>@string/overtime_true</item>
+      <item>@string/overtime_false</item>
+   </array>
+   <array name="payunits">
+      <item>@string/hourly</item>
+      <item>@string/daily</item>
+   </array>
+</resources>
